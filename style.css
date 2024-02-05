@@ -1,0 +1,70 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: RGB(223, 207, 190);
+    margin: 200px auto;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(24, 67, 104);
+}
+
+.tit{ 
+    text-align  : center;
+    border-radius: 10px;
+    margin-top: -55px;
+    width: 100px;
+    background-color:rgb(24, 67, 104); ;
+    color:aliceblue;
+}
+section{
+    min-width: 360px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+}
+footer{
+    background-color: rgb(24, 67, 104);
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+    color: aliceblue;
+    width: 200px;
+    margin: auto;
+}
+.gmail{
+    width: 50%;
+    padding:10px;
+}
+.senha{
+    width: 50%;
+    padding: 10px;
+}
+.olho{
+    text-align: center;
+    padding-left: 10px ;
+    margin:-2px auto;
+    width: 20px;
+    cursor: pointer;
+    
+        
+}
+.cu{
+    padding: 10px;
+    background-color: rgb(24, 67, 104);
+    color: white;
+    border-radius: 10px;
+    border-color: blue;
+    cursor: pointer;
+}
+.cu:hover{
+    padding: 11px;
+    background-color: blue;
+}

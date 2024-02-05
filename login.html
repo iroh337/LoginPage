@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <link rel="icon" type="icon" href="./imges/iroh.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <section class="secao">
+       <div>
+           <h1>Login</h1>
+       </div>
+       <div>
+           <label for="">Usuario:</label> <br>
+           <input type="text" placeholder="Digite aqui..." class="usuario"> <br>
+       </div>
+       <div id="divsenha">
+               <label for="senha">Senha:</label><br>
+               <input type="password" placeholder="Digite aqui..." name="senha" class="senha">
+               <img src="./imges/eye-close.png" class="olho" alt=""onclick="mostrar()">
+       </div>
+           <p class="resposta"></p>
+           <button class="botao" onclick="logar()">Logar</button>
+           <p></p>
+        Não tem uma conta?
+        <a href="signup.html">Sign Up</a>
+       <p class="logincriado"></p>
+   </section>
+
+
+<footer>&copy;Richard Henrique</footer>
+
+<script src="loginsrc.js"></script>
+</body>
+</html>

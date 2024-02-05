@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpPage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="./imges/iroh.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+         
+</head>
+<body>
+    <header >
+        
+    </header>
+
+    <section class="secao">
+        <div>
+            <h1>Sign Up</h1>
+
+            <div name="divuser">
+                <label for="usuario">Usuario:</label> <br>
+                <input type="text" placeholder="Usuario" class="gmail"> <br>
+            </div>
+            
+            <div id="divsenha">
+                <label for="senha">Senha:</label><br>
+                <input type="password" placeholder="Senha" name="senha" class="senha">
+                <img src="./imges/eye-close.png" class="olho" alt=""onclick="mostrar()">
+            </div>
+
+            <p></p>
+            <p class="logincriado"></p>
+            <button class="cu" onclick="entrar()">Cadastrar</button>
+            
+            <div>
+                <p></p>
+                <label for="mandapralogin">
+                    Já tem uma conta?
+                    <a href="login.html">Login</a>
+                </label>
+            </div>
+            <div class="list">
+                <p>A senha deve ter:</p>
+                <ul>
+                    <li id="req0">Uma letra.</li>
+                    <li id="req1">Um número.</li>
+                    <li id="req2">Um símbolo (!,@,#..)</li>
+                </ul>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <footer>&copy;Richard Henrique</footer>
+
+    <script src="src.js"></script>
+</body>
+</html>
