@@ -44,23 +44,5 @@ function logar(){
         res.innerHTML = 'Usuario ou senha incorreto(s).'
     }
 
-
-        // for(let i in usuarios){
-        //     if(pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass){
-        //         validaLogin = true
-        //         break
-        //     }else if(pegaUsuario == aCadastro[i].login && pegaSenha == usuarios[i].pass){
-                
-        //     }
-        //     else{
-        //         validaLogin = false
-        //     } 
-        // }
-        // if(validaLogin == true){
-        //     location.href = 'home.html'
-        // }else{
-        //     alert('erro')
-        // }
-
     }
 
