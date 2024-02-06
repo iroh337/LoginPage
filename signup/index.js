@@ -1,28 +1,24 @@
-// import {firebaseConfig} from '../environments/'
 
-const firebaseConfig =
-{
-    apiKey: "AIzaSyBukvaZG0EFZCEOMAs6IPdWoFiDu4jtYkg",
-    authDomain: "database-teste-77e3e.firebaseapp.com",
-    databaseURL: "https://database-teste-77e3e-default-rtdb.firebaseio.com",
-    projectId: "database-teste-77e3e",
-    storageBucket: "database-teste-77e3e.appspot.com",
-    messagingSenderId: "1073454269311",
-    appId: "1:1073454269311:web:3ba6d21f0287ee9f0a504a"
-};
+import { firebaseConfig } from "../environment/environments.js";
+
+
+console.log(firebaseConfig)
+
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth()
 const database = firebase.database()
 
 
-function entrar() {
+var btn = document.getElementById('btn')
 
-    email = document.getElementById('email').value
-    password = document.getElementById('password').value
+btn.addEventListener('click', function () {
 
-    if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email ou Password Incorretos!')
+    var email = document.getElementById('email').value
+    var password = document.getElementById('password').value
+    var usuario = document.getElementById('usuario').value
+
+    if (validate_email(email) == false || validate_password(password) == false || validate_user(usuario) == false || !letraNumSimb(password)) {
         return
 
     }
@@ -32,12 +28,11 @@ function entrar() {
             var user = auth.currentUser
             var database_ref = database.ref()
             var user_data = {
-                email : email,
-                password : password,
-                last_login : Date.now()
+                email: email,
+                user:usuario,
+                password: password,
             }
-            database_ref.child('users/' + user.uid).set(user_data)  
-            alert('User Created!!')
+            database_ref.child('users/' + user.uid).set(user_data)
         })
         .catch(function (error) {
 
@@ -46,24 +41,31 @@ function entrar() {
 
             alert(error_message)
         })
-}
+})
+
 
 
 
 function validate_email(email) {
-    expression = /^[^@]+@\w+(\.\w+)+\w$/
-    if (expression.test(email) == true) {
-        // Email is good
+    var filter = /^[^@]+@\w+(\.\w+)+\w$/
+    if (filter.test(email)) {
         return true
     } else {
-        // Email is not good
         return false
     }
 }
 
 function validate_password(password) {
-    // Firebase only accepts lengths greater than 6
+    // Senha deve ser maior que 6
     if (password < 6) {
+        return false
+    } else {
+        return true
+    }
+}
+function validate_user(usuario) {
+    // Senha deve ser maior que 6
+    if (usuario < 6) {
         return false
     } else {
         return true
@@ -80,4 +82,7 @@ function validate_field(field) {
     } else {
         return true
     }
+}
+function letraNumSimb(str){
+    return /[a-zA-Z]/.test(str) && /[0-9]/.test(str) && /[^a-zA-Z0-9]/.test(str)
 }

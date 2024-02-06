@@ -1,7 +1,7 @@
 
-function entrar(){
-    let gmail = document.querySelector(".gmail").value
-    let senha = document.querySelector(".senha").value
+btn.addEventListener('click', function () {
+    let gmail = document.querySelector("#email").value
+    let senha = document.querySelector("#password").value
     let tems = true
 
    
@@ -20,7 +20,7 @@ function entrar(){
         if (tems) {
             // divlist.innerHTML = ''
             gmsg.style.color = "green"
-            gmsg.innerHTML = "Login completo com sucesso!"
+            gmsg.innerHTML = "Cadastro completo com sucesso!"
 
             let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]') 
 
@@ -42,18 +42,18 @@ function entrar(){
             gmsg.innerHTML = "Erro no Login!!!!  <br> Siga os requisitos de senha e tente novamente!"
         }
     }
-}
+})
 
 function mostrar(){
-    let senha = document.querySelector(".senha")
+    let senha = document.querySelector("#password")
     let eye = document.querySelector(".olho")
     
     if(senha.type === "password"){
         senha.type = "text"
-        eye.src = "./imges/eye-open.png"
+        eye.src = "../imges/eye-open.png"
     } else {
         senha.type = 'password'
-        eye.src = "./imges/eye-close.png"
+        eye.src = "../imges/eye-close.png"
     }
 }
 

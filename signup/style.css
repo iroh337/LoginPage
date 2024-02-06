@@ -26,10 +26,18 @@ section{
     background-color: aliceblue;
     padding: 20px;
     border-radius: 20px;
-    width: 50%;
+    width: min-content;
     max-width: 500px;
     margin: auto;
+    
+    
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
 footer{
     background-color: rgb(24, 67, 104);
     border-radius: 10px;
@@ -39,22 +47,23 @@ footer{
     width: 200px;
     margin: auto;
 }
-.gmail{
-    width: 50%;
+.inputs{
+    align-items: center ;
+    width: 93%;
     padding:10px;
 }
-.senha{
-    width: 50%;
-    padding: 10px;
-}
-.olho{
-    text-align: center;
-    padding-left: 10px ;
-    margin:-2px auto;
-    width: 20px;
-    cursor: pointer;
+/* #divolho{
     
-        
+    position: absolute;
+    left: 57%;
+    top: 45.5%;
+    width: min-content;
+} */
+.olho{
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 20px;
 }
 .cu{
     padding: 10px;
@@ -67,4 +76,12 @@ footer{
 .cu:hover{
     padding: 11px;
     background-color: blue;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+#showsenha{
+    display: flex;
 }

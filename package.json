@@ -1,0 +1,12 @@
+{
+  "name": "loginpage",
+  "version": "1.0.0",
+  "description": "Página de Login simples pedindo senha \"complexa\".",
+  "main": "'../signup/index.js'",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
