@@ -26,9 +26,12 @@ section{
     background-color: aliceblue;
     padding: 20px;
     border-radius: 20px;
-    width: 50%;
-    max-width: 500px;
+    width: min-content;
     margin: auto;
+}
+#divlogin{
+    display: flex;
+    flex-direction: column;
 }
 footer{
     background-color: rgb(24, 67, 104);
@@ -39,18 +42,15 @@ footer{
     width: 200px;
     margin: auto;
 }
-.usuario{
-    width: 50%;
-    padding:10px;
-}
-.senha{
-    width: 50%;
+
+.inputs{
+    width: 93%;
     padding: 10px;
 }
 .olho{
-    text-align: center;
-    padding-left: 10px ;
-    margin:-2px auto;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
     width: 20px;
     cursor: pointer;
 }
@@ -64,4 +64,7 @@ footer{
 }
 .botao:hover{
     background-color: blue;
+}
+#showsenha{
+    display: flex;
 }

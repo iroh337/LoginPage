@@ -1,5 +1,5 @@
 {
-  "name": "loginpage",
+  "name": "login",
   "version": "1.0.0",
   "description": "Página de Login simples pedindo senha \"complexa\".",
   "main": "'../signup/index.js'",

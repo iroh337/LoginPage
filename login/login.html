@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-     <link rel="icon" type="icon" href="../imges/iroh.png">
+    <link rel="icon" type="icon" href="../imges/iroh.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-   <section class="secao">
-       <div>
-           <h1>Login</h1>
-       </div>
-       <div>
-           <label for="">Usuario:</label> <br>
-           <input type="text" placeholder="Digite aqui..." class="usuario" required=""> <br>
-       </div>
-       <div id="divsenha">
-               <label for="senha">Senha:</label><br>
-               <input type="password" placeholder="Digite aqui..." name="senha" class="senha" required="">
-               <img src="./imges/eye-close.png" class="olho" alt=""onclick="mostrar()">
-       </div>
-           <p class="resposta"></p>
-           <button class="botao" onclick="logar()">Logar</button>
-           <p></p>
-        Não tem uma conta?
-        <a href="/signup/signup.html">Sign Up</a>
-       <p class="logincriado"></p>
-   </section>
+    <section class="secao">
+        <div>
+            <h1>Login</h1>
+        </div>
+        <div id="divlogin">
+            <label for="">Email ou Usuario:</label> 
+            <input type="text" placeholder="Digite aqui..." class="inputs" id="email" required=""> 
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Digite aqui..." name="senha" class="inputs" id="password" required="">
+            <div id="showsenha">
+                Mostrar senha
+                <div id="divolho">
+                    <img src="../imges/eye-close.png" class="olho" alt="" onclick="mostrar()">
+                </div>
+            </div>
+            <p class="resposta"></p>
+            <button class="botao" id="btn">Logar</button>
+            <p></p>
+            Não tem uma conta?
+            <a href="/signup/signup.html">Sign Up</a>
+            <p class="logincriado"></p>
+        </div>
+    </section>
 
 
-<footer>&copy;Richard Henrique</footer>
+    <footer>&copy;Richard Henrique</footer>
 
-<script src="loginsrc.js"></script>
+    <script src="loginsrc.js"></script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-<script src="index.js"></script>
+<script src="index.js" type="module"></script>
+
 </html>
