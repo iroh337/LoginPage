@@ -14,57 +14,44 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
-
-    <section class="secao">
-        <div class="container">
+    <main>
+        <div name="divuser" id="divuser">
             <h1>Sign Up</h1>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" class="inputs" id="email" >
+            <label for="usuario">Usuario:</label>
+            <input type="text" placeholder="Usuario" class="inputs" id="usuario">
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Senha" name="senha" class="inputs" id="password">
+            <div id="showsenha">
+                <p>Mostrar senha:</p>
 
-            <div name="divuser" id="divuser">
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Email" class="inputs" id="email" required="email">
-                <label for="usuario">Usuario:</label>
-                <input type="text" placeholder="Usuario" class="inputs" id="usuario">
-                <label for="senha">Senha:</label>
-                <input type="password" placeholder="Senha" name="senha" class="inputs" id="password"
-                    required="password">
-                <div id="showsenha">
-                    <p>Mostrar senha:</p>
-                    
-                        <img src="../imges/eye-close.png" class="olho" alt="" onclick="mostrar()">
-                     
-                    
-                </div>
-            </div>
+                <img src="../imges/eye-close.png" class="olho" alt="" onclick="mostrar()">
 
-            <p></p>
-            <p class="logincriado"></p>
-            <button class="cu" id="btn">Cadastrar</button>
 
-            <div>
-                <p></p>
-                <label for="mandapralogin">
-                    Já tem uma conta?
-                    <a href="/login/login.html">Login</a>
-                </label>
-            </div>
-            <div class="list">
-                <p>A senha deve ter:</p>
-                <ul>
-                    <li id="req0">Uma letra.</li>
-                    <li id="req1">Um número.</li>
-                    <li id="req2">Um símbolo (!,@,#..)</li>
-                </ul>
             </div>
         </div>
+        <p class="logincriado"></p>
+        <button class="btn" id="btn">Cadastrar</button>
 
-
-    </section>
-
-    <footer>&copy;Richard Henrique</footer>
-
+        <div>
+            <p></p>
+            <label class="lblogin" for="mandapralogin">
+                Já tem uma conta?
+                <a href="/login/login.html">Login</a>
+            </label>
+        </div>
+        <div class="list">
+            <p>A senha deve ter:</p>
+            <ul>
+                <li id="req0">Uma letra.</li>
+                <li id="req1">Um número.</li>
+                <li id="req2">Um símbolo (!,@,#..)</li>
+            </ul>
+        </div>
+        <footer>&copy;Richard Henrique</footer>
+    </main>
     <script src="src.js"></script>
     <script type="module" src="index.js"></script>
 </body>

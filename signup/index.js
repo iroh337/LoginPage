@@ -19,7 +19,6 @@ btn.addEventListener('click', function () {
     var usuario = document.getElementById('usuario').value
 
     if (validate_email(email) == false || validate_password(password) == false || validate_user(usuario) == false || !letraNumSimb(password)) {
-        alert('Email fora de formato!')
         return
 
     }

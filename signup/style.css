@@ -1,100 +1,96 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: RGB(223, 207, 190);
-    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-h1{
-    text-align: center;
+h1 {
     color: aliceblue;
-    padding: 5px;
-    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(82, 17, 143);
+    min-width: 122px;
+    width: min-content;
+    padding: 2px;
     border-radius: 10px;
-    background-color: rgb(24, 67, 104);
 }
 
-.tit{ 
-    text-align  : center;
-    border-radius: 10px;
-    margin-top: -55px;
-    width: 100px;
-    background-color:rgb(24, 67, 104); ;
-    color:aliceblue;
-}
-section{
-    min-width: 360px;
+main {
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
+    min-width: 360px;
+    width: min-content;
+    border-radius: 10px;
+    margin: auto;
     padding: 20px;
-    border-radius: 20px;
-    width: min-content;
-    max-width: 500px;
-    margin: auto;
-    
-    
+    box-sizing: border-box;
 }
-.container{
+
+
+.inputs {
     display: flex;
     flex-direction: column;
-}
-
-
-footer{
-    background-color: rgb(24, 67, 104);
-    border-radius: 10px;
-    padding: 4px;
-    text-align: center;
-    color: aliceblue;
-    width: 200px;
-    margin: auto;
-}
-.inputs{
-    align-items: center ;
-    width: 93%;
-    padding:10px;
-}
-/* #divolho{
-    
-    position: absolute;
-    left: 57%;
-    top: 45.5%;
-    width: min-content;
-} */
-.olho{
-    height: 15px;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 20px;
-    cursor: pointer;
-}
-.cu{
     padding: 10px;
-    background-color: rgb(24, 67, 104);
-    color: white;
-    border-radius: 10px;
-    border-color: blue;
+    min-width: 330px;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.olho {
+    height: 12px;
     cursor: pointer;
 }
-.cu:hover{
-    padding: 11px;
-    background-color: blue;
+
+#showsenha {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    height:10px;
+    padding-bottom: 10px;
+
 }
 
-label{
-    display: flex;
-    flex-direction: column;
-}
-#showsenha{
-    display: flex;
+.list {
+    width: 300px;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        margin: 20px auto; 
-    }
-    section {
-        padding: 10px; 
-    }
-    footer {
-        margin-top: 10px; 
-    }
+.btn {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    border: 3;
+    font-size: 15px;
+    font: bolder;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: aliceblue;
+
+    background: blueviolet;
+    background: linear-gradient(90deg, rgb(149, 76, 218) 0%, rgb(82, 17, 143) 100%);
+}
+
+.btn:active {
+    transform: translate(0em, 0.2em);
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    padding-inline: 15px;
+}
+
+.lblogin {
+    display: flex;
+    gap: 10px;
+
 }

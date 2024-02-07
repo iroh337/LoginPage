@@ -10,10 +10,10 @@ btn.addEventListener('click', function () {
     let gmsg = document.querySelector('.logincriado')
 
     if (gmail === '' || senha === ''){
-        alert("ERRO, preencha todos os dados.")
+        gmsg.style.color = "red"
+        gmsg.innerHTML = "Erro no Login!!!!  <br> Siga os requisitos de senha e tente novamente!" 
     } else {
         if (!containsLetterNumberAndSymbol(senha)) {
-            alert("A senha deve conter pelo menos uma letra, um número e um símbolo.")
             tems = false
         }
 

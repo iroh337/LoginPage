@@ -44,8 +44,10 @@ btn.addEventListener('click', function () {
     .catch(function(error) {
       var error_code = error.code
       var error_message = error.message
-  
-      alert(error_message)
+       
+      let answer = document.querySelector('.resposta')
+      answer.style.color = 'red'
+      answer.innerHTML = 'Email ou senha incorreto!!  '
     })
   }
 )
