@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: RGB(223, 207, 190);
-    margin: 200px auto;
+    margin: 100px auto;
 }
 
 h1{
@@ -85,4 +85,16 @@ label{
 }
 #showsenha{
     display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 20px auto; 
+    }
+    section {
+        padding: 10px; 
+    }
+    footer {
+        margin-top: 10px; 
+    }
 }
