@@ -49,7 +49,7 @@ btn.addEventListener('click', function () {
 
 function validate_email(email) {
     var filter = /^[^@]+@\w+(\.\w+)+\w$/
-    if (filter.test(email)== true) {
+    if (filter.test(email)) {
         return true
     } else {
         return false
@@ -66,7 +66,7 @@ function validate_password(password) {
 }
 function validate_user(usuario) {
     // Senha deve ser maior que 6
-    if (usuario.length < 6) {
+    if (usuario < 6) {
         return false
     } else {
         return true
@@ -84,6 +84,6 @@ function validate_field(field) {
         return true
     }
 }
-// function letraNumSimb(str) {
-//     return /[a-zA-Z]/.test(str) && /[0-9]/.test(str) && /[^a-zA-Z0-9]/.test(str)
-// }
+function letraNumSimb(str) {
+    return /[a-zA-Z]/.test(str) && /[0-9]/.test(str) && /[^a-zA-Z0-9]/.test(str)
+}
