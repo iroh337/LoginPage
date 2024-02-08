@@ -18,8 +18,8 @@
             <h1>Login</h1>
         </div>
         <div id="divlogin">
-            <label for="">Email:</label> 
-            <input type="text" placeholder="Digite aqui..." class="inputs" id="email" required=""> 
+            <label for="">Email:</label>
+            <input type="text" placeholder="Digite aqui..." class="inputs" id="email" required="">
             <label for="senha">Senha:</label>
             <input type="password" placeholder="Digite aqui..." name="senha" class="inputs" id="password" required="">
             <div id="showsenha">
@@ -31,20 +31,25 @@
             <p class="resposta"></p>
             <button class="botao" id="btn">Logar</button>
             <p></p>
-            Não tem uma conta?
-            <a href="/signup/signup.html">Sign Up</a>
-            <p class="logincriado"></p>
+            <div class="direct">
+                <label class="label-direct" for="send-to-signup">
+                    Não tem uma conta?
+                    <a href="/signup/signup.html">Sign Up</a>
+                </label>
+            </div>
+            <!-- <p class="logincriado"></p> -->
         </div>
+        <footer>&copy;Richard Henrique</footer>
     </section>
 
 
-    <footer>&copy;Richard Henrique</footer>
 
-    
+
 </body>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <script src="index.js" type="module"></script>
 <script src="loginsrc.js"></script>
+
 </html>

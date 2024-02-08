@@ -34,14 +34,15 @@ section{
     flex-direction: column;
 }
 footer{
-    background-color: rgb(24, 67, 104);
-    border-radius: 10px;
-    padding: 4px;
-    text-align: center;
-    color: aliceblue;
-    width: 200px;
     margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    padding-inline: 15px;
+    width: 200px;
 }
+
 
 .inputs{
     width: 93%;
@@ -56,15 +57,29 @@ footer{
 }
 .botao{
     padding: 10px;
-    background-color: rgb(0, 64, 120);
+    background: linear-gradient(90deg, rgb(46, 41, 198) 0%, rgb(26, 22, 144) 100%);
     color: white;
     border-radius: 10px;
     border-color: blue;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 .botao:hover{
     background-color: blue;
+    background: linear-gradient(90deg, rgb(26, 23, 125) 0%, rgb(29, 27, 92) 100%);
+
 }
 #showsenha{
     display: flex;
+}
+.lblogin {
+    display: flex;
+    gap: 10px;
+
+}
+.direct label{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
