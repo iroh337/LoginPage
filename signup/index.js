@@ -13,14 +13,12 @@ const database = firebase.database()
 var btn = document.getElementById('btn')
 
 btn.addEventListener('click', function () {
-    console.log('clicou')
     var email = document.getElementById('email').value
     var password = document.getElementById('password').value
     var usuario = document.getElementById('usuario').value
 
     if (validate_email(email) == false || validate_password(password) == false || validate_user(usuario) == false || !letraNumSimb(password)) {
         return
-
     }
 
     auth.createUserWithEmailAndPassword(email, password)
