@@ -15,6 +15,7 @@ h1 {
     width: min-content;
     padding: 2px;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 main {
