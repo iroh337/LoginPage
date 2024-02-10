@@ -17,23 +17,10 @@ btn.addEventListener('click', function () {
             tems = false
         }
 
-        if (tems) {
+        if (validate_email(gmail) == true) {
             // divlist.innerHTML = ''
             gmsg.style.color = "green"
             gmsg.innerHTML = "Cadastro completo com sucesso!"
-
-            let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]') 
-
-            listaUsuario.push(
-                {
-                    login: gmail,
-                    pass: senha
-            }
-            )
-            localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario))  
-
-            
-                
 
 
         } else {
@@ -59,4 +46,17 @@ function mostrar(){
 
 function containsLetterNumberAndSymbol(str){
     return /[a-zA-Z]/.test(str) && /[0-9]/.test(str) && /[^a-zA-Z0-9]/.test(str)
+}
+
+function letraNumSimb(str) {
+    return /[a-zA-Z]/.test(str) && /[0-9]/.test(str) && /[^a-zA-Z0-9]/.test(str)
+}
+
+function validate_email(email) {
+    var filter = /^[^@]+@\w+(\.\w+)+\w$/
+    if (filter.test(email)) {
+        return true
+    } else {
+        return false
+    }
 }

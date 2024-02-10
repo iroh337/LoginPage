@@ -18,13 +18,16 @@
     <main>
         <div name="divuser" id="divuser">
             <h1>Sign Up</h1>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Email" class="inputs" id="email" >
-            <label for="usuario">Usuario:</label>
-            <input type="text" placeholder="Usuario" class="inputs" id="usuario">
-            <label for="senha">Senha:</label>
-            <input type="password" placeholder="Senha" name="senha" class="inputs" id="password">
-            <div id="showsenha">
+            <form method="post" action="https://www.google.com/">
+                
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" class="inputs" id="email" required="email">
+                <label for="usuario">Usuario:</label>
+                <input type="text" placeholder="Usuario" class="inputs" id="usuario" required>
+                <label for="senha">Senha:</label>
+                <input type="password" placeholder="Senha" name="senha" class="inputs" id="password" required>
+                
+            </form><div id="showsenha">
                 <p>Mostrar senha:</p>
 
                 <img src="../imges/eye-close.png" class="olho" alt="" onclick="mostrar()">
@@ -33,7 +36,7 @@
             </div>
         </div>
         <p class="logincriado"></p>
-        <button class="btn" id="btn">Cadastrar</button>
+        <button type="submit" class="btn" id="btn">Cadastrar</button>
 
         <div>
             <p></p>
