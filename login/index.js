@@ -37,7 +37,6 @@ btn.addEventListener('click', function () {
   
       database_ref.child('users/' + user.uid).update(user_data)
   
-      alert('Logando...!!')
       location.href = "../home.html"
   
     })

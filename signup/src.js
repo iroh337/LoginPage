@@ -2,6 +2,7 @@
 btn.addEventListener('click', function () {
     let gmail = document.querySelector("#email").value
     let senha = document.querySelector("#password").value
+    var usuario = document.getElementById('usuario').value
     let tems = true
 
    
@@ -9,15 +10,15 @@ btn.addEventListener('click', function () {
     // let divlist = document.querySelector(".list")
     let gmsg = document.querySelector('.logincriado')
 
-    if (gmail === '' || senha === ''){
+    if (gmail === '' || senha === ''||usuario === ''){
         gmsg.style.color = "red"
-        gmsg.innerHTML = "Erro no Login!!!!  <br> Siga os requisitos de senha e tente novamente!" 
+        gmsg.innerHTML = "Preencha todos os dados!" 
     } else {
-        if (!containsLetterNumberAndSymbol(senha)) {
+        if (!letraNumSimb(senha)) {
             tems = false
         }
 
-        if (validate_email(gmail) == true) {
+        if (validate_email(gmail) == true && validate_password(senha) == true) {
             // divlist.innerHTML = ''
             gmsg.style.color = "green"
             gmsg.innerHTML = "Cadastro completo com sucesso!"
@@ -26,7 +27,7 @@ btn.addEventListener('click', function () {
         } else {
             // divlist.innerHTML = ''
             gmsg.style.color = "red"
-            gmsg.innerHTML = "Erro no Login!!!!  <br> Siga os requisitos de senha e tente novamente!"
+            gmsg.innerHTML = "Erro no Login! Siga os requisitos de senha e tente novamente!"
         }
     }
 })
@@ -58,5 +59,14 @@ function validate_email(email) {
         return true
     } else {
         return false
+    }
+}
+
+function validate_password(password) {
+    // Senha deve ser maior que 6
+    if (password.length < 6) {
+        return false
+    } else {
+        return true
     }
 }
